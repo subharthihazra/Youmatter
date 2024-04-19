@@ -179,8 +179,8 @@ function Message() {
         >
           <Logo />
           <div className={styles.headerText}>
-            <h4>MindMate</h4>
-            <h6>A mental health chat assistance</h6>
+            <h4>YouMatter</h4>
+            <h6>Every being matters</h6>
           </div>
         </div>
 

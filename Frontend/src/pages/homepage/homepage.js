@@ -48,10 +48,8 @@ function Homepage() {
         <div className={styles.logoContainer}>
           <Logo />
           <div className={styles.headerText}>
-            <h4 className={styles.text}>MindMate</h4>
-            <h6 className={`${styles.text} text-xs`}>
-              A mental health chat assistance
-            </h6>
+            <h4 className={styles.text}>YouMatter</h4>
+            <h6 className={`${styles.text} text-xs`}>Every being matters</h6>
           </div>
         </div>
         <div className="flex flex-row gap-4">
