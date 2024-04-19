@@ -17,13 +17,13 @@ import axios from "axios";
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyB_STKtkXoNYXUMDIAqQ-e6kOGS8fI2wcc",
-  authDomain: "mindmate-algovengers.firebaseapp.com",
-  projectId: "mindmate-algovengers",
-  storageBucket: "mindmate-algovengers.appspot.com",
-  messagingSenderId: "194388833270",
-  appId: "1:194388833270:web:5ac806ba946f8339d44dd7",
-  measurementId: "G-CZ8NCME35H",
+  apiKey: "AIzaSyAS72PxqZg99c4bGS3NROzngPJsNx9SFSo",
+  authDomain: "youmatter-1.firebaseapp.com",
+  projectId: "youmatter-1",
+  storageBucket: "youmatter-1.appspot.com",
+  messagingSenderId: "851158347800",
+  appId: "1:851158347800:web:609fb221a9c5b57c64936d",
+  measurementId: "G-R4VER50X0X",
 };
 
 // Initialize Firebase
