@@ -96,9 +96,9 @@ function ScoreChart({ dataset }) {
         label: "Wellness",
         data: [],
         fill: false,
-        borderColor: "purple",
-        pointBackgroundColor: "black",
-        pointBorderColor: "black",
+        borderColor: "lime",
+        pointBackgroundColor: "white",
+        pointBorderColor: "white",
         pointBorderWidth: 2,
         pointHoverBorderWidth: 0,
         borderWidth: 2,
@@ -260,13 +260,16 @@ function Analysis() {
   return (
     <div className={styles.analysisContainer}>
       <header>
-        <div className={styles.logoContainer} onClick={()=>{
-          navigate('/')
-        }}>
+        <div
+          className={styles.logoContainer}
+          onClick={() => {
+            navigate("/");
+          }}
+        >
           <Logo />
           <div className={styles.headerText}>
-            <h4>MindMate</h4>
-            <h6>A mental health chat assistance</h6>
+            <h4>YouMatter</h4>
+            <h6>Every being matters</h6>
           </div>
         </div>
 
