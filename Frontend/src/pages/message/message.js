@@ -59,7 +59,7 @@ function Message() {
   useEffect(() => {
     if (chatId !== null) {
       //make a websocket connection here
-      let wss = new WebSocket(`wss://mindmate-ws.onrender.com?id=${chatId}`);
+      let wss = new WebSocket(`${process.env.REACT_APP_WS_LINK}?id=${chatId}`);
       wss.addEventListener("open", () => {
         console.log("Websocket connected");
         ws.current.send(JSON.stringify({ type: "client:connected" }));
@@ -171,9 +171,12 @@ function Message() {
   return (
     <div className={styles.messageContainer}>
       <header>
-        <div className={styles.logoContainer} onClick={()=>{
-          navigate('/')
-        }}>
+        <div
+          className={styles.logoContainer}
+          onClick={() => {
+            navigate("/");
+          }}
+        >
           <Logo />
           <div className={styles.headerText}>
             <h4>MindMate</h4>
