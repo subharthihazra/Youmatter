@@ -5,13 +5,10 @@ import Image from "../../svgs/hero_img.png";
 import ImagePh from "../../svgs/hero_img_ph.png";
 import axios from "axios";
 import { LuLogIn, LuLogOut } from "react-icons/lu";
-import { motion } from "framer-motion";
-import { LampContainer } from "../../components/ui/lamp";
 
 import { useContext, useRef } from "react";
 import LoginContext from "../../context/context";
 import Articles from "../Articles/Articles";
-import piechart from "../../svgs/piechart.png";
 import { ContainerScroll } from "../../components/ui/container-scroll-animation";
 import { IoIosArrowRoundForward } from "react-icons/io";
 
