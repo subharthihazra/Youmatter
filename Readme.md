@@ -41,5 +41,4 @@ YouMatter application runs on 4 server
   - Vercel
   - Render
   - Mongo DB
-  - Mirma Clouds
   - Firebase
