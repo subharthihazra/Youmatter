@@ -9,7 +9,11 @@ const initHist = [
   },
   {
     role: "model",
-    parts: [{ text: "Sure." }],
+    parts: [
+      {
+        text: "Sure. I am YouMatterBOT. Tell me your name, age, gender and the problem you are facing, so that I can help you with.",
+      },
+    ],
   },
   // {
   //   role: "user",
