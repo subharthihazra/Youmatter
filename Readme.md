@@ -24,7 +24,7 @@ YouMatter application runs on 3 server
 - Backend
 - WebSocket Server
   
-![294255501-bc6c71c9-017f-49c9-9770-ee10164fe88b (1)](https://github.com/nikhilgb0110/Youmatter/assets/92659226/72faf149-4303-4ec0-8f40-c2612cee49f4)
+![sysyou](https://github.com/nikhilgb0110/Youmatter/assets/126336384/f6a75541-20f1-435a-bb6d-023b747288ed)
 
 
 #### Tech stack
