@@ -19,11 +19,11 @@ YouMatter website provides a user friendly UI to learn about mental health.
 ## Tech
 
 #### System Design
-YouMatter application runs on 4 server
+YouMatter application runs on 3 server
 - Frontend
 - Backend
 - WebSocket Server
-- Email Server
+  
 ![294255501-bc6c71c9-017f-49c9-9770-ee10164fe88b (1)](https://github.com/nikhilgb0110/Youmatter/assets/92659226/72faf149-4303-4ec0-8f40-c2612cee49f4)
 
 
