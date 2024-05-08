@@ -7,7 +7,7 @@ const { startGeminiChat } = require("../gemini/chat.js");
 const chatHistModel = require("../models/ChatHist.js");
 
 const connectWithChatBot = async (req, res) => {
-  console.log(req.userId)
+  // console.log(req.userId)
   try {
     if (req.userId === undefined) {
       // through err
@@ -117,11 +117,11 @@ const connectWithChatBot = async (req, res) => {
 };
 
 const clearChat = async (req, res) => {
-  console.log(req.userId)
+  // console.log(req.userId)
   const resp = await chatHistModel.deleteMany({
     userId: req.userId,
   });
-  console.log(resp)
+  // console.log(resp)
   if(resp){
     res.status(200).json({info: "cleared"});
   }else{
