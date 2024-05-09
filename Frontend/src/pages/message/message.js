@@ -175,6 +175,23 @@ function Message() {
     }
   };
 
+  const handleClear = async () => {
+    try {
+      const { data } = await axios.post(
+        process.env.REACT_APP_API_LINK + "/clearchat",
+        {},
+        {
+          withCredentials: true,
+        }
+      );
+      console.log(data);
+      //refresh window
+      window.location.reload();
+    } catch (error) {
+      console.log("Err in clearing");
+    }
+  };
+
   return (
     <div className={styles.messageContainer}>
       <header>
@@ -241,7 +258,7 @@ function Message() {
         )}
         {chatInit &&
           chat &&
-          chat.map((x, i) => {
+          <>{chat.map((x, i) => {
             return (
               <Chat
                 text={x.message}
@@ -250,7 +267,10 @@ function Message() {
                 isLoading={x.isLoading ? true : false}
               />
             );
-          })}
+            })}
+            <div onClick={handleClear} className="text-center mx-auto my-8 px-3 py-1 bg-[#ff004c5e] w-fit rounded-full cursor-pointer">Clear All</div>
+          </>
+          }
       </main>
       <footer>
         <form
