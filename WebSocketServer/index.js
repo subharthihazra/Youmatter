@@ -2,8 +2,29 @@ const WebSocket = require("ws");
 const dotenv = require("dotenv");
 dotenv.config();
 
-const port = process.env.SOCKET_PORT || 8802;
-const wss = new WebSocket.Server({ port: port });
+const express = require("express");
+const cors = require("cors");
+const app = express();
+
+app.use(express.json());
+app.use(cors());
+
+app.get("/cron", (req, res) => {
+  res.status(200).json({ msg: "ok" });
+});
+
+const httpServer = app.listen(process.env.PORTX, () => {
+  console.log(`ws Server Started on ${process.env.PORTX} ...`);
+});
+
+// const port = process.env.SOCKET_PORT || 8802;
+const wss = new WebSocket.Server({ noServer: true });
+
+httpServer.on("upgrade", (req, socket, head) => {
+  wss.handleUpgrade(req, socket, head, (ws) => {
+    wss.emit("connection", ws, req);
+  });
+});
 
 const map = new Map();
 /* 
