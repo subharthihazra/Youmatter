@@ -118,14 +118,20 @@ const connectWithChatBot = async (req, res) => {
 
 const clearChat = async (req, res) => {
   // console.log(req.userId)
-  const resp = await chatHistModel.deleteMany({
-    userId: req.userId,
-  });
-  // console.log(resp)
-  if(resp){
-    res.status(200).json({info: "cleared"});
-  }else{
-    res.sendStatus(404);
+  try{
+    if(!req.userId){ return res.sendStatus(400); }
+
+    const resp = await chatHistModel.deleteMany({
+      userId: req.userId,
+    });
+    // console.log(resp)
+    if(resp){
+      res.status(200).json({info: "cleared"});
+    }else{
+      res.sendStatus(404);
+    }
+  }catch(err){
+    res.sendStatus(500);
   }
 }
 
