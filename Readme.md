@@ -42,3 +42,14 @@ YouMatter application runs on 3 server
   - Render
   - Mongo DB
   - Firebase
+
+## How to Setup
+- clone the project using `git clone <project_url>`
+- create a new firebase project and obtain key as per `Backend/.env.example`
+- create a new gemini key as per `Backend/.env.example`
+- add `.env` in `Backend, Frontend, WebSockerServer` folders as per `.env.example` in respective folders.
+- open each of 3 folders in terminal, and run `npm i`
+- goto `Backend/` in terminal and run `npm run dev`
+- goto `Frontend/` in terminal and run `npm start`
+- goto `WebSockerServer` in terminal and run `node index.js`
+- goto browser and open the url where `Frontend` is running ...
